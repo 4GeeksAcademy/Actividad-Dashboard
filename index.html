@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablero de Operaciones | Influencer</title>
+    <meta name="description" content="Tablero responsivo de operaciones para comisiones, conversiones y rendimiento por canal." />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body class="min-h-screen bg-slate-100 text-slate-900">
+    <div class="min-h-screen lg:grid lg:grid-cols-[16rem_1fr]">
+      <aside class="hidden bg-slate-950 text-slate-200 lg:flex lg:flex-col lg:justify-between">
+        <div>
+          <header class="flex items-center gap-3 border-b border-slate-800 px-6 py-6">
+            <span class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-500 text-sm font-bold text-white">S</span>
+            <p class="text-lg font-bold">Estudio de Sarah</p>
+          </header>
+          <nav aria-label="Menú" class="px-4 py-5">
+            <ul class="space-y-2 text-sm font-medium">
+              <li><a href="#" class="flex items-center gap-3 rounded-lg bg-slate-800 px-4 py-3 text-white">Tablero</a></li>
+              <li><a href="#" class="flex items-center gap-3 rounded-lg px-4 py-3 text-slate-300 transition hover:bg-slate-900">Colaboraciones</a></li>
+              <li><a href="#" class="flex items-center gap-3 rounded-lg px-4 py-3 text-slate-300 transition hover:bg-slate-900">Mi contenido</a></li>
+              <li><a href="#" class="flex items-center gap-3 rounded-lg px-4 py-3 text-slate-300 transition hover:bg-slate-900">Finanzas</a></li>
+            </ul>
+          </nav>
+        </div>
+        <article class="m-4 rounded-xl border border-slate-800 bg-slate-900 p-4">
+          <p class="text-sm font-semibold text-white">John Smith</p>
+          <p class="text-xs text-slate-400">Creador de contenido</p>
+        </article>
+      </aside>
+
+      <main class="px-4 py-5 sm:px-6 md:px-8 md:py-8">
+        <header class="flex flex-col gap-4 border-b border-slate-200 pb-4 sm:flex-row sm:items-start sm:justify-between">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.14em] text-indigo-600 lg:hidden">Estudio de Sarah</p>
+            <h1 class="text-2xl font-black tracking-tight text-slate-900 sm:text-3xl">Mi panel de marca</h1>
+            <p class="mt-1 text-sm text-slate-500">Seguimiento de rendimiento personal y visión general del ROI de campañas.</p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <button type="button" class="rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-50">Descargar reporte</button>
+            <button type="button" class="rounded-lg bg-indigo-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-indigo-500">Nueva campaña</button>
+          </div>
+        </header>
+
+        <section aria-label="KPI principales" class="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-4">
+          <article class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+            <p class="text-xs font-semibold uppercase tracking-wide text-slate-400">Ingresos totales</p>
+            <p class="mt-2 text-3xl font-black">€42,500.00</p>
+            <p class="mt-2 text-xs font-semibold text-emerald-600">↑ 12.5% vs mes anterior</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+            <p class="text-xs font-semibold uppercase tracking-wide text-slate-400">Mis comisiones (15%)</p>
+            <p class="mt-2 text-3xl font-black">€6,375.00</p>
+            <p class="mt-2 text-xs font-semibold text-slate-500">Después de comisión de plataforma</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+            <p class="text-xs font-semibold uppercase tracking-wide text-slate-400">Impacto de audiencia</p>
+            <p class="mt-2 text-3xl font-black">4.82%</p>
+            <p class="mt-2 text-xs font-semibold text-rose-500">↓ caída de 0.4%</p>
+          </article>
+          <article class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+            <p class="text-xs font-semibold uppercase tracking-wide text-slate-400">Engagement promedio</p>
+            <p class="mt-2 text-3xl font-black">7.2%</p>
+            <p class="mt-2 text-xs font-semibold text-emerald-600">↑ incremento de 2.1%</p>
+          </article>
+        </section>
+
+        <section aria-label="Drivers del rendimiento" class="mt-4 grid grid-cols-1 gap-3 xl:grid-cols-2">
+          <article class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+            <h2 class="text-xl font-bold">Alcance de mi contenido</h2>
+            <ul class="mt-4 space-y-4 text-sm">
+              <li>
+                <div class="mb-1 flex items-center justify-between font-semibold text-slate-700"><span>Instagram</span><span>€22,100 (52%)</span></div>
+                <div class="h-2 rounded-full bg-slate-100"><div class="h-2 w-[52%] rounded-full bg-pink-500"></div></div>
+              </li>
+              <li>
+                <div class="mb-1 flex items-center justify-between font-semibold text-slate-700"><span>TikTok</span><span>€14,450 (34%)</span></div>
+                <div class="h-2 rounded-full bg-slate-100"><div class="h-2 w-[34%] rounded-full bg-slate-900"></div></div>
+              </li>
+              <li>
+                <div class="mb-1 flex items-center justify-between font-semibold text-slate-700"><span>YouTube</span><span>€5,950 (14%)</span></div>
+                <div class="h-2 rounded-full bg-slate-100"><div class="h-2 w-[14%] rounded-full bg-rose-500"></div></div>
+              </li>
+            </ul>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+            <h2 class="text-xl font-bold">Productos afiliados top</h2>
+            <div class="mt-4 overflow-x-auto">
+              <table class="min-w-full text-left text-sm">
+                <thead class="text-xs uppercase tracking-wide text-slate-400">
+                  <tr>
+                    <th class="py-2 pr-3 font-semibold">Marca asociada</th>
+                    <th class="py-2 pr-3 font-semibold">Precio medio</th>
+                    <th class="py-2 pr-3 font-semibold">Ingresos</th>
+                    <th class="py-2 font-semibold">Tasa conv.</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100">
+                  <tr>
+                    <td class="py-3 pr-3 font-semibold">Producto A (Cuidado facial)</td>
+                    <td class="py-3 pr-3">€50</td>
+                    <td class="py-3 pr-3">€15,200</td>
+                    <td class="py-3 font-semibold text-emerald-600">5.2%</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 pr-3 font-semibold">Producto B (Ropa)</td>
+                    <td class="py-3 pr-3">€120</td>
+                    <td class="py-3 pr-3">€18,500</td>
+                    <td class="py-3 font-semibold text-emerald-600">4.1%</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 pr-3 font-semibold">Producto C (Accesorios)</td>
+                    <td class="py-3 pr-3">€80</td>
+                    <td class="py-3 pr-3">€8,800</td>
+                    <td class="py-3 font-semibold text-slate-500">3.8%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+
+        <section aria-label="Detalles operacionales" class="mt-4 rounded-2xl border border-slate-200 bg-white shadow-sm">
+          <header class="flex items-center justify-between border-b border-slate-200 px-4 py-4 sm:px-5">
+            <h2 class="text-xl font-bold">Colaboraciones recientes</h2>
+            <a href="#" class="text-sm font-semibold text-indigo-600">Ver todo</a>
+          </header>
+          <div class="overflow-x-auto">
+            <table class="min-w-full text-left text-sm">
+              <thead class="bg-slate-50 text-xs uppercase tracking-wide text-slate-400">
+                <tr>
+                  <th class="px-4 py-3 font-semibold">Marca</th>
+                  <th class="px-4 py-3 font-semibold">Estado</th>
+                  <th class="px-4 py-3 font-semibold">Seguidores</th>
+                  <th class="px-4 py-3 font-semibold">Ingresos</th>
+                  <th class="px-4 py-3 font-semibold">Mi comisión</th>
+                  <th class="px-4 py-3 font-semibold">ROI</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100">
+                <tr>
+                  <td class="px-4 py-3">
+                    <p class="font-semibold">Luxe Skincare</p>
+                    <p class="text-xs text-slate-500">Campaña de verano</p>
+                  </td>
+                  <td class="px-4 py-3"><span class="rounded-full bg-emerald-100 px-2 py-1 text-xs font-semibold text-emerald-700">Activa</span></td>
+                  <td class="px-4 py-3">245k</td>
+                  <td class="px-4 py-3">€12,400.00</td>
+                  <td class="px-4 py-3 font-bold text-indigo-600">€1,860.00</td>
+                  <td class="px-4 py-3 font-semibold text-emerald-600">6.2x</td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-3">
+                    <p class="font-semibold">Urban Apparel</p>
+                    <p class="text-xs text-slate-500">Colección de otoño</p>
+                  </td>
+                  <td class="px-4 py-3"><span class="rounded-full bg-emerald-100 px-2 py-1 text-xs font-semibold text-emerald-700">Activa</span></td>
+                  <td class="px-4 py-3">82k</td>
+                  <td class="px-4 py-3">€4,200.00</td>
+                  <td class="px-4 py-3 font-bold text-indigo-600">€630.00</td>
+                  <td class="px-4 py-3 font-semibold text-emerald-600">4.8x</td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-3">
+                    <p class="font-semibold">Tech Gadgets</p>
+                    <p class="text-xs text-slate-500">Video de reseña</p>
+                  </td>
+                  <td class="px-4 py-3"><span class="rounded-full bg-slate-200 px-2 py-1 text-xs font-semibold text-slate-600">Pausada</span></td>
+                  <td class="px-4 py-3">1.2M</td>
+                  <td class="px-4 py-3">€21,900.00</td>
+                  <td class="px-4 py-3 font-bold text-indigo-600">€3,285.00</td>
+                  <td class="px-4 py-3 font-semibold text-emerald-600">5.4x</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section aria-label="Rendimiento por plataforma" class="mt-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-5">
+          <h2 class="text-xl font-bold">Rendimiento por plataforma</h2>
+          <div class="mt-4 grid grid-cols-1 divide-y divide-slate-200 rounded-xl border border-slate-200 md:grid-cols-3 md:divide-y-0 md:divide-x">
+            <article class="p-4">
+              <div class="flex items-center justify-between">
+                <h3 class="font-bold text-pink-500">Instagram</h3>
+                <p class="text-xs font-semibold text-emerald-600">+18% crecimiento</p>
+              </div>
+              <dl class="mt-3 grid grid-cols-2 gap-2 text-sm">
+                <div><dt class="text-xs uppercase text-slate-400">Clics</dt><dd class="text-lg font-black">45.2k</dd></div>
+                <div><dt class="text-xs uppercase text-slate-400">Compartidos</dt><dd class="text-lg font-black">1.2k</dd></div>
+              </dl>
+            </article>
+            <article class="p-4">
+              <div class="flex items-center justify-between">
+                <h3 class="font-bold text-slate-800">TikTok</h3>
+                <p class="text-xs font-semibold text-emerald-600">+32% crecimiento</p>
+              </div>
+              <dl class="mt-3 grid grid-cols-2 gap-2 text-sm">
+                <div><dt class="text-xs uppercase text-slate-400">Vistas</dt><dd class="text-lg font-black">890k</dd></div>
+                <div><dt class="text-xs uppercase text-slate-400">Finalización</dt><dd class="text-lg font-black">42%</dd></div>
+              </dl>
+            </article>
+            <article class="p-4">
+              <div class="flex items-center justify-between">
+                <h3 class="font-bold text-rose-500">YouTube</h3>
+                <p class="text-xs font-semibold text-rose-500">-2% caída</p>
+              </div>
+              <dl class="mt-3 grid grid-cols-2 gap-2 text-sm">
+                <div><dt class="text-xs uppercase text-slate-400">Tiempo medio</dt><dd class="text-lg font-black">4m 12s</dd></div>
+                <div><dt class="text-xs uppercase text-slate-400">CTR</dt><dd class="text-lg font-black">2.8%</dd></div>
+              </dl>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
